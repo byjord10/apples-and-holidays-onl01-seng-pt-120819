@@ -72,6 +72,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
         binding.pry
         if holiday_name == :memorial_day
           supply_array << "Table Cloth"
+          return supply_array
         end
       end
     end
