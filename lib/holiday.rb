@@ -66,17 +66,9 @@ end
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
   # code here
   # remember to return the updated hash
-  holiday_hash.each do |season, holiday_name|
-    if season == :spring
-      holiday.each do |holiday_name, supply_array|
-        binding.pry
-        if holiday_name == :memorial_day
-          supply_array << "Table Cloth"
-          return supply_array
-        end
-      end
-    end
-  end
+  supplies_hash[season][new_holiday_name] = supplies_list
+
+  supplies_hash
 end
 
 
